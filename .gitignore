@@ -11,18 +11,7 @@
 *.pydevproject
 .project
 .metadata
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
+.settings
 
 # OS generated files #
 ######################
