@@ -21,7 +21,7 @@ packages = [
 	#### Python packages
 	"easy_install mechanize", 
 	"easy_install beautifulsoup4",
-	"easy_install markdown",
+	"easy_install markdown"
 	"apt-get install -y python-imaging",
 	#### Java
 	"apt-get install -y openjdk-7-jre"
