@@ -40,4 +40,13 @@ alias gpuoh='git pull origin HEAD'
 
 # Compass Aliases
 alias cc='compass compile'
+alias ccf='compass compile --force'
 alias cw='compass watch'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
