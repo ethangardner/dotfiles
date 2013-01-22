@@ -26,20 +26,28 @@ packages = [
 	"apt-get install -y openjdk-7-jre"
 ]
 
-if _platform == "linux" or _platform == "linux2":
-	packagelist = ''
-	for package in packages:
-		package = package + '; '
-		packagelist = packagelist + package
-	# print packagelist
-	subprocess.Popen(packagelist, shell=True)
+class FreshInstall():
+	"""docstring for FreshInstall"""
+	def __init__(self):
+		self.packages = packages
+		self.loadPackages(packages)
 
-folder = '.' + os.sep + '.dotfiles'
-files = os.listdir(folder)
+	def loadPackages(self, packages):
+		if _platform == "linux" or _platform == "linux2":
+			packages = '; '.join(packages)
+			# print packages
+			subprocess.Popen(packages, shell=True)		
+	
+	def installSymlinks(self):
+		folder = '.' + os.sep + '.dotfiles'
+		files = os.listdir(folder)
+		ignored = [".git", "README.md", "install.py"]
 
-ignored = [".git", "README.md", "install.py"]
+		for filename in files:
+			if filename not in ignored:
+				command = 'ln -s ' + folder + os.sep + filename + ' ./' + filename
+				subprocess.Popen(command.split(), stdout=subprocess.PIPE)
 
-for filename in files:
-	if filename not in ignored:
-		command = 'ln -s ' + folder + os.sep + filename + ' ./' + filename
-		subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+if __name__ == "__main__":
+    go = FreshInstall()
+    go.installSymlinks()
