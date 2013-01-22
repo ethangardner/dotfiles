@@ -12,22 +12,37 @@ they can be placed under version control
 
 packages = [
 	"apt-get update",
+	# Source Control
 	"apt-get install -y git-core", 
 	"apt-get install -y subversion",
 	"apt-get install -y libapache2-svn",
+	# Utilities
 	"apt-get install -y imagemagick --fix-missing", 
+	"apt-get install -y phantomjs", 
+	# Python Packages
 	"easy_install mechanize", 
 	"easy_install beautifulsoup4",
 	"easy_install markdown",
 	"apt-get install -y python-imaging",
+	# Ruby Gems
+	"\curl -L https://get.rvm.io | bash -s stable --ruby"
 	"apt-get install -y ruby-sass",
 	"apt-get install -y ruby-compass",
 	"apt-get install -y ruby-haml",
-	"apt-get install -y openjdk-7-jre"
+	# Java
+	"apt-get install -y openjdk-7-jre",
+	# Node JS
+	"apt-get install -y python-software-properties python g++ make",
+	"add-apt-repository ppa:chris-lea/node.js",
+	"apt-get update",
+	"apt-get install -y nodejs npm",
+	"npm install -g grunt",
+	"ln -s /usr/bin/nodejs /usr/bin/node"
 ]
 
 class FreshInstall():
-	"""docstring for FreshInstall"""
+	"""FreshInstall is responsible for the general setup of a
+	new Ubuntu Linux development machine. """
 	def __init__(self):
 		self.packages = packages
 		self.loadPackages(packages)
