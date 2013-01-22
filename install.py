@@ -45,7 +45,7 @@ class FreshInstall():
 
 		for filename in files:
 			if filename not in ignored:
-				command = 'ln -s ' + folder + os.sep + filename + ' ./' + filename
+				command = 'ln -s ' + folder + os.sep + filename + ' .' + os.sep + filename
 				subprocess.Popen(command.split(), stdout=subprocess.PIPE)
 
 if __name__ == "__main__":
