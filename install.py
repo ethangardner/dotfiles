@@ -17,6 +17,7 @@ packages = [
 	"apt-get install -y subversion",
 	"apt-get install -y libapache2-svn",
 	# Utilities
+	"apt-get install -y curl",
 	"apt-get install -y imagemagick --fix-missing", 
 	"apt-get install -y phantomjs", 
 	# Python Packages
@@ -50,8 +51,8 @@ class FreshInstall():
 	def loadPackages(self, packages):
 		if _platform == "linux" or _platform == "linux2":
 			packages = '; '.join(packages)
-			# print packages
-			subprocess.Popen(packages, shell=True)		
+			subprocess.Popen(packages, shell=True)
+
 	
 	def installSymlinks(self):
 		folder = '.' + os.sep + '.dotfiles'
