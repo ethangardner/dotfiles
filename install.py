@@ -18,6 +18,7 @@ packages = [
 	"apt-get install -y libapache2-svn",
 	# Utilities
 	"apt-get install -y curl",
+	"apt-get install -y siege",
 	"apt-get install -y imagemagick --fix-missing", 
 	"apt-get install -y phantomjs", 
 	# Python Packages
