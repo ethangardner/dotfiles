@@ -39,6 +39,8 @@ packages = [
 	"apt-get update",
 	"apt-get install -y nodejs npm",
 	"npm install -g grunt",
+	"npm install -g grunt-sass",
+	"npm install -g grunt-compass",
 	"ln -s /usr/bin/nodejs /usr/bin/node"
 ]
 
