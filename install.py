@@ -21,6 +21,7 @@ packages = [
 	"apt-get install -y siege",
 	"apt-get install -y imagemagick --fix-missing", 
 	"apt-get install -y phantomjs", 
+	"apt-get install -y ack", 
 	# Python Packages
 	"easy_install mechanize", 
 	"easy_install beautifulsoup4",
