@@ -28,10 +28,10 @@ packages = [
 	"easy_install markdown",
 	"apt-get install -y python-imaging",
 	# Ruby Gems
-	"\curl -L https://get.rvm.io | bash -s stable --ruby"
-	"apt-get install -y ruby-sass",
-	"apt-get install -y ruby-compass",
-	"apt-get install -y ruby-haml",
+	# "\curl -L https://get.rvm.io | bash -s stable --ruby"
+	# "apt-get install -y ruby-sass",
+	# "apt-get install -y ruby-compass",
+	# "apt-get install -y ruby-haml",
 	# Java
 	"apt-get install -y openjdk-7-jre",
 	# Node JS
