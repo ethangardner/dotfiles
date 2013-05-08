@@ -13,17 +13,17 @@ they can be placed under version control
 packages = [
 	"apt-get update",
 	# Source Control
-	"apt-get install -y git-core", 
+	"apt-get install -y git-core",
 	"apt-get install -y subversion",
 	"apt-get install -y libapache2-svn",
 	# Utilities
 	"apt-get install -y curl",
 	"apt-get install -y siege",
-	"apt-get install -y imagemagick --fix-missing", 
-	"apt-get install -y phantomjs", 
-	"apt-get install -y ack", 
+	"apt-get install -y imagemagick --fix-missing",
+	"apt-get install -y phantomjs",
+	"apt-get install -y ack",
 	# Python Packages
-	"easy_install mechanize", 
+	"easy_install mechanize",
 	"easy_install beautifulsoup4",
 	"easy_install markdown",
 	"apt-get install -y python-imaging",

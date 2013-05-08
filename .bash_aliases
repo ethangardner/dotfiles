@@ -38,6 +38,10 @@ alias gcl='git clone'
 alias gpom='git push origin master'
 alias gpuoh='git pull origin HEAD'
 
+# Subversion
+alias si = 'svn info'
+alias ss = 'svn status'
+
 # Compass Aliases
 alias cc='compass compile'
 alias ccf='compass compile --force'
