@@ -67,6 +67,6 @@ class FreshInstall():
 				subprocess.Popen(command.split(), stdout=subprocess.PIPE)
 
 if __name__ == "__main__":
-    go = FreshInstall()
-    go.installSymlinks()
+	go = FreshInstall()
+	go.installSymlinks()
 	exit()
