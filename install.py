@@ -23,9 +23,10 @@ packages = [
 	"apt-get install -y phantomjs",
 	"apt-get install -y ack",
 	# Python Packages
+	"apt-get install python-setuptools",
+	"apt-get install python-pip",
 	"easy_install mechanize",
 	"easy_install beautifulsoup4",
-	"easy_install markdown",
 	"apt-get install -y python-imaging",
 	# Ruby Gems
 	# "\curl -L https://get.rvm.io | bash -s stable --ruby"
@@ -33,9 +34,9 @@ packages = [
 	# "apt-get install -y ruby-compass",
 	# "apt-get install -y ruby-haml",
 	# Java
-	"apt-get install -y openjdk-7-jre",
+	# "apt-get install -y openjdk-7-jre",
 	# Node JS
-	# "apt-get install -y python-software-properties python g++ make",
+	#"apt-get install -y python-software-properties python g++ make",
 	# "add-apt-repository ppa:chris-lea/node.js",
 	# "apt-get update",
 	# "apt-get install -y nodejs npm",
