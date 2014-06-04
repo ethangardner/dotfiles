@@ -55,3 +55,16 @@ alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
+
+# Directories
+alias go_bp='cd /sbm/sites/benefitspro/htdocs'
+alias go_cut='cd /sbm/sites/cutimes/CR-redesign-2014.02.27'
+alias go_ic='cd /sbm/sites/insidecounsel/htdocs'
+alias go_lhp='cd /sbm/sites/lifehealthpro/htdocs'
+alias go_pc='cd /sbm/sites/propertycasualty360/htdocs'
+alias go_pub='cd /sbm/sites/publish/trunk'
+alias go_s='cd /sbm/sites'
+alias go_ta='cd /sbm/sites/thinkadvisor/htdocs'
+alias go_tr='cd /sbm/sites/treasuryandrisk/htdocs'
+
+
